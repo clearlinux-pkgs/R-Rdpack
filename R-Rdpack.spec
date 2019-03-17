@@ -4,26 +4,19 @@
 #
 Name     : R-Rdpack
 Version  : 0.10.1
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/Rdpack_0.10-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_0.10-1.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
 Group    : Development/Tools
 License  : GPL-2.0+
-Requires: R-bibtex
-Requires: R-gbRd
 BuildRequires : R-bibtex
 BuildRequires : R-gbRd
 BuildRequires : buildreq-R
 
 %description
-including functions reprompt() and ereprompt() for updating 'Rd'
-    documentation for functions, methods and classes; 'Rd' macros for
-    citations and import of references from 'bibtex' files for use in
-    'Rd' files and 'roxygen2' comments; 'Rd' macros for evaluating and
-    inserting snippets of 'R' code and the results of its evaluation or
-    creating graphics on the fly; and many functions for manipulation of
-    references and Rd files.
+[![CRANStatusBadge](http://www.r-pkg.org/badges/version/Rdpack)](https://cran.r-project.org/package=Rdpack)
+[![rpackages.io rank](http://www.rpackages.io/badge/Rdpack.svg)](http://www.rpackages.io/package/Rdpack)
 
 %prep
 %setup -q -c -n Rdpack
@@ -33,11 +26,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538661515
+export SOURCE_DATE_EPOCH=1552784678
 
 %install
+export SOURCE_DATE_EPOCH=1552784678
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1538661515
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -72,8 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library Rdpack|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  Rdpack || :
 
 
 %files
