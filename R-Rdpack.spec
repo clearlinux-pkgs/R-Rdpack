@@ -4,7 +4,7 @@
 #
 Name     : R-Rdpack
 Version  : 0.11.0
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/Rdpack_0.11-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_0.11-0.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
@@ -16,6 +16,7 @@ BuildRequires : R-bibtex
 BuildRequires : R-gbRd
 BuildRequires : R-stringi
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 [![CRANStatusBadge](http://www.r-pkg.org/badges/version/Rdpack)](https://cran.r-project.org/package=Rdpack)
@@ -28,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1562446813
+export SOURCE_DATE_EPOCH=1571885338
 
 %install
-export SOURCE_DATE_EPOCH=1562446813
+export SOURCE_DATE_EPOCH=1571885338
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
