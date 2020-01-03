@@ -4,7 +4,7 @@
 #
 Name     : R-Rdpack
 Version  : 0.11.1
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/Rdpack_0.11-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_0.11-1.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
