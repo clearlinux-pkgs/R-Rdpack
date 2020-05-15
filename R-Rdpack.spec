@@ -4,7 +4,7 @@
 #
 Name     : R-Rdpack
 Version  : 0.11.1
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/Rdpack_0.11-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_0.11-1.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
@@ -17,26 +17,32 @@ BuildRequires : R-gbRd
 BuildRequires : buildreq-R
 
 %description
-[![CRANStatusBadge](http://www.r-pkg.org/badges/version/Rdpack)](https://cran.r-project.org/package=Rdpack)
-[![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/Rdpack)](https://www.r-pkg.org/pkg/Rdpack)
+including functions reprompt() and ereprompt() for updating 'Rd'
+    documentation for functions, methods and classes; 'Rd' macros for
+    citations and import of references from 'bibtex' files for use in
+    'Rd' files and 'roxygen2' comments; 'Rd' macros for evaluating and
+    inserting snippets of 'R' code and the results of its evaluation or
+    creating graphics on the fly; and many functions for manipulation of
+    references and Rd files.
 
 %prep
 %setup -q -c -n Rdpack
+cd %{_builddir}/Rdpack
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576533288
+export SOURCE_DATE_EPOCH=1589586239
 
 %install
-export SOURCE_DATE_EPOCH=1576533288
+export SOURCE_DATE_EPOCH=1589586239
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
