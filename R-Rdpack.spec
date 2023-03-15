@@ -4,7 +4,7 @@
 #
 Name     : R-Rdpack
 Version  : 2.4
-Release  : 48
+Release  : 49
 URL      : https://cran.r-project.org/src/contrib/Rdpack_2.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_2.4.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
