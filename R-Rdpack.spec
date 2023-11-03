@@ -5,7 +5,7 @@
 #
 Name     : R-Rdpack
 Version  : 2.5
-Release  : 52
+Release  : 53
 URL      : https://cran.r-project.org/src/contrib/Rdpack_2.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_2.5.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
