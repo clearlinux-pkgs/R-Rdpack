@@ -1,5 +1,5 @@
 PKG_NAME := R-Rdpack
-URL = https://cran.r-project.org/src/contrib/Rdpack_2.5.tar.gz
+URL = https://cran.r-project.org/src/contrib/Rdpack_2.6.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
