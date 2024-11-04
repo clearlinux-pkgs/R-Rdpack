@@ -7,7 +7,7 @@
 #
 Name     : R-Rdpack
 Version  : 2.6.1
-Release  : 63
+Release  : 64
 URL      : https://cran.r-project.org/src/contrib/Rdpack_2.6.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rdpack_2.6.1.tar.gz
 Summary  : Update and Manipulate Rd Documentation Objects
